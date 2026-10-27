@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pendaftaran Workshop Web Development</h1>
+        <p class="subtitle">Isi formulir di bawah ini untuk mengamankan kursi Anda.</p>
+
+        <div id="pesanNotifikasi" class="notifikasi" aria-live="polite"></div>
+
+        <form id="formWorkshop" novalidate>
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" maxlength="50" placeholder="Masukkan nama lengkap">
+                <small class="char-count">Jumlah karakter: <span id="jumlahKarakterNama">0</span>/50</small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" placeholder="contoh@email.com">
+            </div>
+
+            <div class="form-group">
+                <label for="sesi">Pilih Sesi Workshop</label>
+                <select id="sesi" name="sesi">
+                    <option value="">-- Pilih Sesi --</option>
+                    <option value="Sesi Pagi (09:00 - 12:00 WIB)">Sesi Pagi (09:00 - 12:00 WIB)</option>
+                    <option value="Sesi Siang (13:00 - 16:00 WIB)">Sesi Siang (13:00 - 16:00 WIB)</option>
+                    <option value="Sesi Malam (19:00 - 21:00 WIB)">Sesi Malam (19:00 - 21:00 WIB)</option>
+                </select>
+            </div>
+
+            <div class="preview-card">
+                <h3>Ringkasan Pendaftaran</h3>
+                <p><strong>Nama:</strong> <span id="previewNama">-</span></p>
+                <p><strong>Email:</strong> <span id="previewEmail">-</span></p>
+                <p><strong>Sesi Dipilih:</strong> <span id="previewSesi">-</span></p>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" id="btnDaftar" class="btn-primary">Daftar Sekarang</button>
+                <button type="button" id="btnReset" class="btn-secondary">Reset Form</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
