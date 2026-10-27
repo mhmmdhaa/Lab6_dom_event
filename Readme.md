@@ -34,7 +34,8 @@ Lab6_dom_event/
 Memilih elemen HTML berdasarkan `id` (`judul` dan `pesan`) lalu mengubah konten teksnya menggunakan properti `textContent` melalui JavaScript.
 
 * **Hasil Tampilan Mengubah Teks:**  
-  ![1. Mengubah Teks Dengan DOM](screenshots/latihan1.png)
+  ![1. Mengubah Teks Dengan DOM](<img width="506" height="316" alt="image" src="https://github.com/user-attachments/assets/5756947b-8c62-4ac4-b5d4-befc32230af7" />
+)
 
 ---
 
